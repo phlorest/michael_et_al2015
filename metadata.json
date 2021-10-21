@@ -1,0 +1,20 @@
+{
+    "id": "michael_et_al2015",
+    "title": null,
+    "description": null,
+    "license": null,
+    "url": "http://linguistics.berkeley.edu/~zjohagan/pdflinks/TG_LIAMES_phylo_v13.pdf",
+    "citation": "Michael L, Chousou-Polydouri N, Bartolomei K, Donnelly E, Wauters V, Meira S & O'Hagan Z. 2015. A Bayesian Phylogenetic Classification of Tupi-Guarani. LIAMES 15(2):1\u201336.",
+    "name": "Tupi-Guarani (Michael et al. 2015)",
+    "author": "Michael et al.",
+    "year": 2015,
+    "scaling": "change",
+    "analysis": "bayesian",
+    "family": "tupi1276",
+    "missing": {
+        "data": "not available.",
+        "nexus": "not available.",
+        "characters": "not available.",
+        "cldf": "not available."
+    }
+}
