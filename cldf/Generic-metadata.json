@@ -14,13 +14,13 @@
         {
             "rdf:about": "https://github.com/D-PLACE/dplace-tree-michael_et_al2015",
             "rdf:type": "prov:Entity",
-            "dc:created": "8467857",
+            "dc:created": "3978d12",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4-50-g7e36072d31",
+            "dc:created": "v4.4",
             "dc:title": "Glottolog"
         }
     ],
@@ -105,6 +105,10 @@
                         "propertyUrl": "http://cldf.clld.org/v1.0/terms.rdf#iso639P3code",
                         "required": false,
                         "name": "ISO639P3code"
+                    },
+                    {
+                        "datatype": "string",
+                        "name": "Glottolog_Name"
                     }
                 ],
                 "primaryKey": [

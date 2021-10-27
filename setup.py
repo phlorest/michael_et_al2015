@@ -14,7 +14,6 @@ setup(
     install_requires=[
         'phlorest',
         'ete3',
-        'cldfbench',
     ],
     extras_require={
         'test': [

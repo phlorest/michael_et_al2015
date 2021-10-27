@@ -1,8 +1,11 @@
 import pathlib
 
-import ete3
 from nexus import NexusReader
 import phlorest
+try:
+    import ete3
+except ImportError:
+    ete3 = None
 
 
 class Dataset(phlorest.Dataset):
