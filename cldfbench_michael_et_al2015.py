@@ -1,11 +1,27 @@
 import pathlib
+from itertools import chain
 
 from nexus import NexusReader
+from nexus.handlers.tree import Tree as NexusTree
+
 import phlorest
+
 try:
     import ete3
 except ImportError:
     ete3 = None
+
+
+def reroot(i, tree):
+    tree = ete3.Tree(tree.newick_string, format=0)
+    tree.set_outgroup('Mawe')
+    return NexusTree('tree tg_%d [&R] = %s' % (i, tree.write(format=5)))
+
+
+def fix_tree(p):
+    if not isinstance(p, str):
+        p = p.read_text(encoding='utf8')
+    return p.replace('(percent)', '_percent')
 
 
 class Dataset(phlorest.Dataset):
@@ -14,39 +30,22 @@ class Dataset(phlorest.Dataset):
 
     def cmd_makecldf(self, args):
         self.init(args)
-        with self.nexus_summary() as nex:
-            for tree in reroot(self.sample(
-                self.raw_dir.read('MICHAEL.tupiguarani_phylogeny.tre'),
-                n=1,
-                detranslate=True,
-                strip_annotation=True,
-            )):
-                self.add_tree(args, tree, nex, 'summary')
-                break
+        
+        summary = self.raw_dir.read_tree(
+            'MICHAEL.tupiguarani_phylogeny.tre',
+            preprocessor=fix_tree,
+            detranslate=True)
+        args.writer.add_summary(summary, self.metadata, args.log)
 
-        with self.nexus_posterior() as nex:
-            for i, tree in enumerate(reroot(self.run_nexus(
-                'combine',
-                self.sample(
-                    self.remove_burnin(
-                        self.raw_dir.read('TGB9jNoApiakaTuriwaraMrBayes.nex.run1.t'), 5001),
-                    n=500,
-                    detranslate=True,
-                    strip_annotation=True,
-                ),
-                self.sample(
-                    self.remove_burnin(
-                        self.raw_dir.read('TGB9jNoApiakaTuriwaraMrBayes.nex.run2.t'), 5001),
-                    n=500,
-                    detranslate=True,
-                    strip_annotation=True,
-                ),
-            )), start=1):
-                self.add_tree(args, tree, nex, 'posterior-{}'.format(i))
-
-
-def reroot(in_):
-    for i, tree in enumerate(NexusReader.from_string(in_).trees.trees):
-        tree = ete3.Tree(tree.newick_string, format=0)
-        tree.set_outgroup('Mawe')
-        yield phlorest.NexusTree('tree tg_%d [&R] = %s' % (i, tree.write(format=5)))
+        p1 = self.raw_dir.read_trees(
+            'TGB9jNoApiakaTuriwaraMrBayes.nex.run1.t',
+            burnin=5001, sample=500, detranslate=True)
+        p2 = self.raw_dir.read_trees(
+            'TGB9jNoApiakaTuriwaraMrBayes.nex.run2.t',
+            burnin=5001, sample=500, detranslate=True)
+        
+        # reroot
+        posterior = [
+            reroot(i, t) for i, t in enumerate(chain(p1, p2), 1)
+        ]
+        args.writer.add_posterior(posterior, self.metadata, args.log)

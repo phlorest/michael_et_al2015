@@ -8,26 +8,33 @@
     "dc:bibliographicCitation": "Michael L, Chousou-Polydouri N, Bartolomei K, Donnelly E, Wauters V, Meira S & O'Hagan Z. 2015. A Bayesian Phylogenetic Classification of Tupi-Guarani. LIAMES 15(2):1\u201336.",
     "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#Generic",
     "dc:identifier": "http://linguistics.berkeley.edu/~zjohagan/pdflinks/TG_LIAMES_phylo_v13.pdf",
+    "dc:license": "https://creativecommons.org/licenses/by/2.0/",
     "dc:source": "sources.bib",
-    "dcat:accessURL": "https://github.com/D-PLACE/dplace-tree-michael_et_al2015",
+    "dc:subject": {
+        "family": "Tupi-Guarani",
+        "analysis": "bayesian",
+        "scaling": "change"
+    },
+    "dc:title": "Phlorest phylogeny derived from Michael et al.2015'Tupi-Guarani (Michael et al. 2015)'",
+    "dcat:accessURL": "https://github.com/phlorest/michael_et_al2015",
     "prov:wasDerivedFrom": [
         {
-            "rdf:about": "https://github.com/D-PLACE/dplace-tree-michael_et_al2015",
+            "rdf:about": "https://github.com/phlorest/michael_et_al2015",
             "rdf:type": "prov:Entity",
-            "dc:created": "3978d12",
+            "dc:created": "55bf721",
             "dc:title": "Repository"
         },
         {
             "rdf:about": "https://github.com/glottolog/glottolog",
             "rdf:type": "prov:Entity",
-            "dc:created": "v4.4",
+            "dc:created": "v4.5",
             "dc:title": "Glottolog"
         }
     ],
     "prov:wasGeneratedBy": [
         {
             "dc:title": "python",
-            "dc:description": "3.8.10"
+            "dc:description": "3.9.6"
         },
         {
             "dc:title": "python-packages",
