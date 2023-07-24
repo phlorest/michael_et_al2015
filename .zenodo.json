@@ -1,5 +1,5 @@
 {
-    "title": null,
+    "title": "Phlorest phylogeny derived from Michael et al. 2015 'Tupi-Guarani (Michael et al. 2015)'",
     "access_right": "open",
     "keywords": [
         "cldf:Generic",
@@ -10,6 +10,32 @@
     "communities": [
         {
             "identifier": "dplace"
+        }
+    ],
+    "creators": [
+        {
+            "name": "Michael, Lev"
+        },
+        {
+            "name": "Chousou-polydouri, Natalia"
+        },
+        {
+            "name": "Bartolomei, Keith"
+        },
+        {
+            "name": "Donnelly, Erin"
+        },
+        {
+            "name": "Wauters, Vivian"
+        },
+        {
+            "name": "Hagan, Zachary O"
+        }
+    ],
+    "contributors": [
+        {
+            "name": "Simon J. Greenhill",
+            "type": "Other"
         }
     ]
 }
