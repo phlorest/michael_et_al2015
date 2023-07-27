@@ -15,13 +15,13 @@
         "analysis": "bayesian",
         "scaling": "change"
     },
-    "dc:title": "Phlorest phylogeny derived from Michael et al. 2015 'Tupi-Guarani (Michael et al. 2015)'",
+    "dc:title": "Phlorest phylogeny derived from Michael et al. 2015 'A Bayesian Phylogenetic Classification of Tupi-Guarani'",
     "dcat:accessURL": "https://github.com/phlorest/michael_et_al2015",
     "prov:wasDerivedFrom": [
         {
             "rdf:about": "https://github.com/phlorest/michael_et_al2015",
             "rdf:type": "prov:Entity",
-            "dc:created": "c68f51e",
+            "dc:created": "c6132b6",
             "dc:title": "Repository"
         },
         {

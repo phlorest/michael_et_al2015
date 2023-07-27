@@ -31,7 +31,7 @@ class Dataset(phlorest.Dataset):
         summary = self.raw_dir.read_tree(
             'MICHAEL.tupiguarani_phylogeny.tre',
             preprocessor=fix_tree,
-            detranslate=True)
+        )
         args.writer.add_summary(summary, self.metadata, args.log)
 
         p1 = self.raw_dir.read_trees(
