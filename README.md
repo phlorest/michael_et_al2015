@@ -1,4 +1,6 @@
-# Dataset michael_et_al2015
+# Phlorest phylogeny derived from Michael et al. 2015 'A Bayesian Phylogenetic Classification of Tupi-Guarani'
+
+[![CLDF validation](https://github.com/phlorest/michael_et_al2015/workflows/CLDF-validation/badge.svg)](https://github.com/phlorest/michael_et_al2015/actions?query=workflow%3ACLDF-validation)
 
 ## How to cite
 
@@ -9,8 +11,12 @@ If you use these data please cite
 
 ## Description
 
+A [Phlorest phylogeny](https://github.com/phlorest) of the Tupi-Guarani language family computed from a bayesian analysis scaled by change.
 
-Available online at http://linguistics.berkeley.edu/~zjohagan/pdflinks/TG_LIAMES_phylo_v13.pdf
+
+This dataset is licensed under a https://creativecommons.org/licenses/by/2.0/ license
+
+Source available online at http://linguistics.berkeley.edu/~zjohagan/pdflinks/TG_LIAMES_phylo_v13.pdf
 
 
 ## CLDF Datasets
@@ -21,4 +27,4 @@ The following CLDF datasets are available in [cldf](cldf):
 
 ## Summary Tree
 
-![summary](./summary_tree.svg)
+![summary](https://raw.githubusercontent.com/phlorest/michael_et_al2015/main/summary_tree.svg)
