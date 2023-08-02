@@ -1,9 +1,6 @@
 import pathlib
 from itertools import chain
 
-from nexus import NexusReader
-from nexus.handlers.tree import Tree as NexusTree
-
 import phlorest
 
 try:
@@ -13,9 +10,9 @@ except ImportError:
 
 
 def reroot(i, tree):
-    tree = ete3.Tree(tree.newick_string, format=0)
+    tree = ete3.Tree(str(tree), format=0)
     tree.set_outgroup('Mawe')
-    return NexusTree('tree tg_%d [&R] = %s' % (i, tree.write(format=5)))
+    return tree.write(format=5)
 
 
 def fix_tree(p):
@@ -34,7 +31,7 @@ class Dataset(phlorest.Dataset):
         summary = self.raw_dir.read_tree(
             'MICHAEL.tupiguarani_phylogeny.tre',
             preprocessor=fix_tree,
-            detranslate=True)
+        )
         args.writer.add_summary(summary, self.metadata, args.log)
 
         p1 = self.raw_dir.read_trees(
@@ -48,4 +45,4 @@ class Dataset(phlorest.Dataset):
         posterior = [
             reroot(i, t) for i, t in enumerate(chain(p1, p2), 1)
         ]
-        args.writer.add_posterior(posterior, self.metadata, args.log)
+        args.writer.add_posterior(posterior, self.metadata, args.log, rooted=True)
