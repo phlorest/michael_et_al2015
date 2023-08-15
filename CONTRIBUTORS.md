@@ -8,4 +8,6 @@ Bartolomei, Keith              |  | author | Author
 Donnelly, Erin                 |  | author | Author
 Wauters, Vivian                |  | author | Author
 Hagan, Zachary O               |  | author | Author
-Simon J. Greenhill             | @SimonGreenhill | maintainer | Phlorest
+Simon J. Greenhill             | @SimonGreenhill | maintainer | Editor
+Robert Forkel            | @xrotwang | maintainer | Editor
+

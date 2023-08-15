@@ -14,7 +14,7 @@ If you use these data please cite
 A [Phlorest phylogeny](https://github.com/phlorest) of the Tupi-Guarani language family computed from a bayesian analysis scaled by change.
 
 
-This dataset is licensed under a https://creativecommons.org/licenses/by/2.0/ license
+This dataset is licensed under a https://creativecommons.org/licenses/by/4.0/ license
 
 Source available online at http://linguistics.berkeley.edu/~zjohagan/pdflinks/TG_LIAMES_phylo_v13.pdf
 
