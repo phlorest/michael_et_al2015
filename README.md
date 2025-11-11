@@ -28,6 +28,6 @@ The following CLDF datasets are available in [cldf](cldf):
 
 ## Summary Tree
 
-[summary](https://raw.githubusercontent.com/phlorest/https://raw.githubusercontent.com/phlorest//main/summary_tree.svg)
+![summary](https://raw.githubusercontent.com/phlorest/michael_et_al2015/main/summary_tree.svg)
 
-[Summary tree visualized with IcyTree](https://icytree.org/?url=https://raw.githubusercontent.com/phlorest/https://raw.githubusercontent.com/phlorest//refs/heads/main/cldf/summary.trees)
+[Summary tree visualized with IcyTree](https://icytree.org/?url=https://raw.githubusercontent.com/phlorest/michael_et_al2015/refs/heads/main/cldf/summary.trees)
