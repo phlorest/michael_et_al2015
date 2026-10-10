@@ -21,7 +21,7 @@
         {
             "rdf:about": "https://github.com/phlorest/michael_et_al2015",
             "rdf:type": "prov:Entity",
-            "dc:created": "v1.1-7-ga17f79b",
+            "dc:created": "v1.1-10-gdd2a53f",
             "dc:title": "Repository"
         },
         {
@@ -132,7 +132,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#TreeTable",
-            "dc:extent": 1,
+            "dc:extent": 1001,
             "tableSchema": {
                 "columns": [
                     {
@@ -219,7 +219,7 @@
         },
         {
             "dc:conformsTo": "http://cldf.clld.org/v1.0/terms.rdf#MediaTable",
-            "dc:extent": 1,
+            "dc:extent": 2,
             "tableSchema": {
                 "columns": [
                     {

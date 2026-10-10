@@ -1,18 +1,34 @@
 import pathlib
 from itertools import chain
 
+import newick
 import phlorest
 
-try:
-    import ete3
-except ImportError:
-    ete3 = None
 
-
-def reroot(i, tree):
-    tree = ete3.Tree(str(tree), format=0)
-    tree.set_outgroup('Mawe')
-    return tree.write(format=5)
+def reroot(tree, outgroup='Mawe'):
+    """Root `tree` (a newick.Node) on the midpoint of the branch leading to `outgroup`."""
+    leaf = tree.get_node(outgroup)
+    path = [leaf]
+    while path[-1].ancestor:
+        path.append(path[-1].ancestor)
+    # reverse parent->child edges from the old root down to the outgroup
+    for child, parent in reversed(list(zip(path, path[1:]))):
+        parent.descendants.remove(child)
+        parent.ancestor, parent.length = child, child.length
+        child.descendants.append(parent)
+    # splice out the old root if it's left with a single child
+    old = path[-1]
+    if len(old.descendants) == 1:
+        (only,) = old.descendants
+        old.ancestor.descendants[old.ancestor.descendants.index(old)] = only
+        only.ancestor, only.length = old.ancestor, (only.length or 0) + (old.length or 0)
+    # new root halfway along the outgroup branch
+    (rest,) = leaf.descendants
+    half = rest.length / 2
+    leaf.descendants, leaf.ancestor, leaf.length = [], None, half
+    rest.ancestor, rest.length = None, half
+    root = newick.Node.create(descendants=[leaf, rest])
+    return root.newick + ';'
 
 
 def fix_tree(p):
@@ -43,6 +59,6 @@ class Dataset(phlorest.Dataset):
         
         # reroot
         posterior = [
-            reroot(i, t) for i, t in enumerate(chain(p1, p2), 1)
+            reroot(t.newick) for t in chain(p1, p2)
         ]
         args.writer.add_posterior(posterior, self.metadata, args.log, rooted=True)

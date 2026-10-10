@@ -13,7 +13,7 @@ setup(
     },
     install_requires=[
         'phlorest',
-        'ete3',
+        'newick',
     ],
     extras_require={
         'test': [
