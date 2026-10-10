@@ -1,0 +1,509 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.4697,
+          -25.5865
+        ]
+      },
+      "properties": {
+        "Name": "Ache",
+        "Glottocode": "ache1246",
+        "xd_ids": [
+          "xd920"
+        ],
+        "Glottolog_Name": "Ach\u00e9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.303,
+          -2.71119
+        ]
+      },
+      "properties": {
+        "Name": "Anambe",
+        "Glottocode": "anam1249",
+        "Glottolog_Name": "Anamb\u00e9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.5001,
+          -4.90246
+        ]
+      },
+      "properties": {
+        "Name": "Arawete",
+        "Glottocode": "araw1273",
+        "Glottolog_Name": "Arawet\u00e9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.1336,
+          -13.6081
+        ]
+      },
+      "properties": {
+        "Name": "AvaCanoeiro",
+        "Glottocode": "avac1239",
+        "Glottolog_Name": "Av\u00e1-Canoeiro"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.391944,
+          -12.381944
+        ]
+      },
+      "properties": {
+        "Name": "Aweti",
+        "Glottocode": "awet1244",
+        "xd_ids": [
+          "xd1406"
+        ],
+        "Glottolog_Name": "Awet\u00ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.37,
+          -20.42
+        ]
+      },
+      "properties": {
+        "Name": "Chiriguano",
+        "Glottocode": "east2555",
+        "xd_ids": [
+          "xd1394"
+        ],
+        "Glottolog_Name": "Eastern Bolivian Guaran\u00ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.3699,
+          3.23694
+        ]
+      },
+      "properties": {
+        "Name": "Emerillon",
+        "Glottocode": "emer1243",
+        "Glottolog_Name": "Teko"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.3683,
+          -3.93574
+        ]
+      },
+      "properties": {
+        "Name": "Guaja",
+        "Glottocode": "guaj1256",
+        "Glottolog_Name": "Guaj\u00e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -57.08816,
+          -25.60551
+        ]
+      },
+      "properties": {
+        "Name": "GuaraniParaguaio",
+        "Glottocode": "para1311",
+        "Glottolog_Name": "Paraguayan Guaran\u00ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -61.6934,
+          -15.8247
+        ]
+      },
+      "properties": {
+        "Name": "Guarayu",
+        "Glottocode": "guar1292",
+        "Glottolog_Name": "Guarayu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -46.2204,
+          -2.46455
+        ]
+      },
+      "properties": {
+        "Name": "Kaapor",
+        "Glottocode": "urub1250",
+        "Glottolog_Name": "Urub\u00fa-Kaapor"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -54.6815,
+          -24.589
+        ]
+      },
+      "properties": {
+        "Name": "Kaiowa",
+        "Glottocode": "kaiw1246",
+        "Glottolog_Name": "Kaiw\u00e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -53.4651,
+          -12.2661
+        ]
+      },
+      "properties": {
+        "Name": "Kamaiura",
+        "Glottocode": "kama1373",
+        "xd_ids": [
+          "xd1402"
+        ],
+        "Glottolog_Name": "Kamayur\u00e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.5479,
+          -11.2747
+        ]
+      },
+      "properties": {
+        "Name": "Kayabi",
+        "Glottocode": "kaya1329",
+        "Glottolog_Name": "Kayab\u00ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -74.0,
+          -4.5
+        ]
+      },
+      "properties": {
+        "Name": "Kokama",
+        "Glottocode": "coca1259",
+        "xd_ids": [
+          "xd1363"
+        ],
+        "Glottolog_Name": "Cocama-Cocamilla"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -56.8749,
+          -3.63897
+        ]
+      },
+      "properties": {
+        "Name": "Mawe",
+        "Glottocode": "sate1243",
+        "xd_ids": [
+          "xd1357"
+        ],
+        "Glottolog_Name": "Sater\u00e9-Maw\u00e9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.711,
+          -26.0188
+        ]
+      },
+      "properties": {
+        "Name": "Mbya",
+        "Glottocode": "mbya1239",
+        "xd_ids": [
+          "xd1408"
+        ],
+        "Glottolog_Name": "Mby\u00e1 Guaran\u00ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -55.051,
+          -25.6521
+        ]
+      },
+      "properties": {
+        "Name": "Nandeva",
+        "Glottocode": "chir1286",
+        "Glottolog_Name": "Chirip\u00e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -69.1667,
+          -3.526
+        ]
+      },
+      "properties": {
+        "Name": "Omagua",
+        "Glottocode": "omag1248",
+        "Glottolog_Name": "Omagua"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.0621,
+          -4.64681
+        ]
+      },
+      "properties": {
+        "Name": "Parakana",
+        "Glottocode": "para1312",
+        "Glottolog_Name": "Parakan\u00e3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.1903,
+          -12.8553
+        ]
+      },
+      "properties": {
+        "Name": "Pauserna",
+        "Glottocode": "paus1244",
+        "Glottolog_Name": "War\u00e1zu"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -63.9688,
+          -15.5298
+        ]
+      },
+      "properties": {
+        "Name": "Siriono",
+        "Glottocode": "siri1273",
+        "xd_ids": [
+          "xd1362"
+        ],
+        "Glottolog_Name": "Sirion\u00f3"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -62.684,
+          -21.4169
+        ]
+      },
+      "properties": {
+        "Name": "Tapiete",
+        "Glottocode": "tapi1253",
+        "Glottolog_Name": "Tapiet\u00e9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -50.5438,
+          -10.5373
+        ]
+      },
+      "properties": {
+        "Name": "Tapirape",
+        "Glottocode": "tapi1254",
+        "xd_ids": [
+          "xd1354"
+        ],
+        "Glottolog_Name": "Tapirap\u00e9"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -48.2359,
+          -2.6123
+        ]
+      },
+      "properties": {
+        "Name": "Tembe",
+        "Glottocode": "temb1276",
+        "xd_ids": [
+          "xd1414"
+        ],
+        "Glottolog_Name": "Tenetehara"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -49.8991,
+          -3.59359
+        ]
+      },
+      "properties": {
+        "Name": "Tocantins",
+        "Glottocode": "toca1235",
+        "Glottolog_Name": "Tocantins Asurini"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -42.106389,
+          -22.807778
+        ]
+      },
+      "properties": {
+        "Name": "Tupinamba",
+        "Glottocode": "tupi1273",
+        "xd_ids": [
+          "xd1416"
+        ],
+        "Glottolog_Name": "Tupinamb\u00e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.6887,
+          1.73817
+        ]
+      },
+      "properties": {
+        "Name": "Wayampi",
+        "Glottocode": "waya1270",
+        "Glottolog_Name": "Wayampi"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.2266,
+          -24.9408
+        ]
+      },
+      "properties": {
+        "Name": "Xeta",
+        "Glottocode": "xeta1241",
+        "xd_ids": [
+          "xd921"
+        ],
+        "Glottolog_Name": "Xet\u00e1"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -52.321,
+          -4.13463
+        ]
+      },
+      "properties": {
+        "Name": "Xingu",
+        "Glottocode": "xing1248",
+        "Glottolog_Name": "Xing\u00fa Asurin\u00ed"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -64.9438,
+          -16.7875
+        ]
+      },
+      "properties": {
+        "Name": "Yuki",
+        "Glottocode": "yuqu1240",
+        "xd_ids": [
+          "xd918"
+        ],
+        "Glottolog_Name": "Yuqui"
+      }
+    }
+  ]
+}
